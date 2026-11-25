@@ -29,18 +29,35 @@ void geometric_sum() {
     (void)acc;
 }
 
+void text_length() {
+    std::string text = "cascade";
+    std::size_t n = text.size();
+    (void)n;
+}
+
+void count_spaces() {
+    std::string text = "a b  c   d";
+    int spaces = 0;
+    for (std::size_t i = 0; i < text.size(); ++i) {
+        if (text[i] == ' ') spaces += 1;
+    }
+    (void)spaces;
+}
+
 extern "C" int subtle_bridge();
-extern "C" void noble_signal();
-extern "C" void gentle_vale();
-extern "C" void sable_marble();
+extern "C" void lucid_delta();
+extern "C" void hidden_lantern();
+extern "C" void swift_crescent();
 
 int main() {
     absolute_diff();
     swap_values();
     is_even();
     geometric_sum();
-    noble_signal();
-    gentle_vale();
-    sable_marble();
+    text_length();
+    count_spaces();
+    lucid_delta();
+    hidden_lantern();
+    swift_crescent();
     return subtle_bridge();
 }
